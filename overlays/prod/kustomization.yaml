@@ -8,6 +8,6 @@ resources:
 # Once DEPLOY_REPO_TOKEN is set, CI pins these to `main-<sha>` on every push to main.
 images:
 - name: ghcr.io/janne6565/holiday-dashboard-backend
-  newTag: main-95f468e
+  newTag: main-a643df7
 - name: ghcr.io/janne6565/holiday-dashboard-frontend
   newTag: main-a49b5d2
