@@ -10,4 +10,4 @@ images:
 - name: ghcr.io/janne6565/holiday-dashboard-backend
   newTag: main-a643df7
 - name: ghcr.io/janne6565/holiday-dashboard-frontend
-  newTag: main-c27668c
+  newTag: main-f308e88
