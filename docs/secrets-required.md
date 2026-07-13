@@ -13,6 +13,7 @@ kubectl -n holidash-prod create secret generic backend-secrets \
   --from-literal=SPRING_DATASOURCE_PASSWORD='<same as postgres password>' \
   --from-literal=FRONTEND_URL='https://holiday.jannekeipert.de' \
   --from-literal=INGEST_KEY='<strong random string; also given to the collectors>' \
+  --from-literal=KONSOLE_PASSWORD='<password that unlocks the Konsole control panel>' \
   --from-literal=RIOT_API_KEY='<riot api key>' \
   --from-literal=RIOT_PLATFORM='euw1' \
   --from-literal=RIOT_REGION='europe' \
