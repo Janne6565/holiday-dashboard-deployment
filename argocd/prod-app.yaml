@@ -6,7 +6,7 @@ metadata:
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
-  project: default
+  project: holiday-dashboard
   source:
     repoURL: https://github.com/Janne6565/holiday-dashboard-deployment
     targetRevision: main

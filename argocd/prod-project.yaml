@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: holiday-dashboard
+  namespace: argocd
+spec:
+  description: SOMMER-HQ holiday dashboard
+  sourceRepos:
+    - https://github.com/Janne6565/holiday-dashboard-deployment
+  destinations:
+    - namespace: holidash-prod
+      server: https://kubernetes.default.svc
+    - namespace: argocd
+      server: https://kubernetes.default.svc
+  clusterResourceWhitelist:
+    - group: ""
+      kind: Namespace
+  namespaceResourceWhitelist:
+    - group: "*"
+      kind: "*"
