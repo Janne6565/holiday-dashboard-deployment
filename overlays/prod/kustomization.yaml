@@ -2,12 +2,12 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 namespace: holidash-prod
 resources:
-  - ../../base
-  - ingress.yaml
+- ../../base
+- ingress.yaml
 # Starts at `latest` (CI publishes it) so the first ArgoCD sync has a pullable image.
 # Once DEPLOY_REPO_TOKEN is set, CI pins these to `main-<sha>` on every push to main.
 images:
-  - name: ghcr.io/janne6565/holiday-dashboard-backend
-    newTag: latest
-  - name: ghcr.io/janne6565/holiday-dashboard-frontend
-    newTag: latest
+- name: ghcr.io/janne6565/holiday-dashboard-backend
+  newTag: main-d9ba887
+- name: ghcr.io/janne6565/holiday-dashboard-frontend
+  newTag: latest
